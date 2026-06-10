@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://phonefix2you.com/sitemap.xml
+Sitemap: https://www.phonefix2you.com/sitemap.xml
