@@ -118,3 +118,283 @@ em, .brand-dot, .kicker { color: #6c3cff; }
   .google-profile-card > a { grid-column: 1 / -1; text-align: center; }
   .trust-grid .review-card { min-height: 180px; }
 }
+
+html { scroll-behavior: smooth; }
+.hero-location {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: -5px 0 16px;
+  color: #4920cf;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.hero-location span { color: #b7a3ff; }
+.hero-proof-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.hero-proof-pills span {
+  padding: 8px 11px;
+  border: 1px solid #e9e7f2;
+  border-radius: 40px;
+  background: rgba(255,255,255,.8);
+  color: #514d68;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.conversion-trust {
+  max-width: 1192px;
+  margin: 0 auto 30px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+.conversion-trust article {
+  min-height: 112px;
+  padding: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid #e9e7f2;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(31,24,64,.05);
+}
+.conversion-trust-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  border-radius: 11px;
+  background: #eee9ff;
+  color: #6c3cff;
+  font-weight: 800;
+}
+.conversion-trust strong, .conversion-trust small { display: block; }
+.conversion-trust strong { margin: 2px 0 6px; font: 700 11px/1.35 "Manrope"; }
+.conversion-trust small { color: #6b6c80; font-size: 8px; line-height: 1.5; }
+
+.repair-visuals {
+  max-width: 1192px;
+  margin: 70px auto 5px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.repair-visual {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  position: relative;
+  border-radius: 24px;
+  background: #17132d;
+  box-shadow: 0 22px 55px rgba(31,24,64,.14);
+}
+.repair-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: inherit;
+  pointer-events: none;
+}
+.repair-visual img { width: 100%; height: 100%; display: block; object-fit: contain; transition: transform .45s ease; }
+.repair-visual:hover img { transform: scale(1.025); }
+
+.city-grid-expanded { grid-template-columns: repeat(3, 1fr); }
+.city-grid-expanded article { min-height: 70px; justify-content: center; }
+.area-copy > p strong { color: #101126; }
+.service-area { grid-template-columns: 1fr 1fr; gap: 46px; }
+.area-card { padding: 0; overflow: hidden; }
+.area-map { height: 310px; background: #eee9ff; }
+.area-map iframe { width: 100%; height: 100%; display: block; border: 0; }
+.area-card-copy { padding: 24px; }
+.area-card-copy > div:first-child { display: flex; align-items: flex-start; gap: 14px; }
+.area-card-copy .area-pin { width: 43px; height: 43px; margin: 0; flex: none; border-radius: 13px; font-size: 19px; }
+.area-card-copy strong { display: block; margin-top: 2px; }
+.area-card-copy p { margin: 7px 0 0; }
+.area-card-copy .area-actions { flex-wrap: wrap; }
+.area-card-copy .area-actions a { flex: 1; min-width: 84px; text-align: center; white-space: nowrap; }
+
+.repair-gallery .center-heading > p {
+  max-width: 550px;
+  margin: 0 auto;
+  color: #6b6c80;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.repair-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 42px;
+}
+.repair-gallery-card {
+  overflow: hidden;
+  border: 1px solid #e9e7f2;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(31,24,64,.07);
+}
+.repair-gallery-card > div:last-child { padding: 22px 24px 24px; }
+.repair-gallery-card h3 { margin: 0 0 7px; font-size: 17px; }
+.repair-gallery-card p { margin: 0; color: #6b6c80; font-size: 11px; line-height: 1.6; }
+.before-after-photo {
+  aspect-ratio: 4 / 5;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #090a0a;
+}
+.before-after-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+.before-after-placeholder {
+  min-height: 330px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: linear-gradient(110deg,#ded9ef 0 49.7%,#f1edff 50.3% 100%);
+}
+.before-after-placeholder::after {
+  content: "";
+  width: 84px;
+  height: 170px;
+  position: absolute;
+  border: 7px solid #302759;
+  border-radius: 18px;
+  background: linear-gradient(145deg,#7e73a8,#ded8f1);
+  box-shadow: 0 20px 35px rgba(31,24,64,.2);
+  transform: rotate(-8deg);
+}
+.back-glass-placeholder::after {
+  background: linear-gradient(145deg,#ddd7f2,#725eaf);
+  transform: rotate(8deg);
+}
+.before-after-placeholder span {
+  position: absolute;
+  top: 16px;
+  z-index: 2;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.9);
+  color: #514d68;
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+.before-after-placeholder span:first-child { left: 16px; }
+.before-after-placeholder span:nth-child(2) { right: 16px; }
+.before-after-placeholder strong {
+  position: absolute;
+  z-index: 3;
+  bottom: 17px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #17132d;
+  color: #fff;
+  font-size: 8px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.trust-grid .review-card small {
+  display: block;
+  margin-top: 20px;
+  color: #8d8a9d;
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.reviews-button { display: table; margin: 36px auto 0; }
+
+.faq-section { max-width: 1192px; }
+.faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.faq-grid details {
+  padding: 0 20px;
+  border: 1px solid #e9e7f2;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 9px 24px rgba(31,24,64,.04);
+}
+.faq-grid summary {
+  padding: 19px 28px 19px 0;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  color: #101126;
+  font: 700 12px/1.45 "Manrope";
+}
+.faq-grid summary::-webkit-details-marker { display: none; }
+.faq-grid summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  color: #6c3cff;
+  font-size: 20px;
+  line-height: 1;
+}
+.faq-grid details[open] summary::after { content: "−"; }
+.faq-grid details p { margin: -3px 0 19px; color: #6b6c80; font-size: 11px; line-height: 1.7; }
+.cta-actions { display: flex; align-items: center; gap: 8px; position: relative; z-index: 1; }
+.cta-actions .button { white-space: nowrap; }
+
+@media (max-width: 980px) {
+  .hero { margin-bottom: 0; padding-bottom: 50px; }
+  .booking-bar {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .logo-strip { padding-top: 52px; }
+  .conversion-trust { grid-template-columns: repeat(2, 1fr); }
+  .conversion-trust article:last-child { grid-column: 1 / -1; }
+  .repair-visuals { grid-template-columns: 1fr 1fr; margin-top: 55px; }
+  .service-area { grid-template-columns: 1fr; }
+  .area-map { height: 340px; }
+  .cta-section { gap: 30px; }
+  .cta-actions { flex-wrap: wrap; justify-content: flex-end; }
+}
+
+@media (max-width: 640px) {
+  .hero { margin-bottom: 0; padding-bottom: 30px; overflow: hidden; }
+  .hero-location { justify-content: flex-start; font-size: 9px; letter-spacing: .08em; }
+  .hero-proof-pills { margin-top: 15px; }
+  .hero-proof-pills span { font-size: 8px; }
+  .booking-bar {
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin-top: 14px;
+  }
+  .logo-strip { padding-top: 42px; }
+  .conversion-trust { grid-template-columns: 1fr; margin-bottom: 0; padding: 0 18px; }
+  .conversion-trust article, .conversion-trust article:last-child { grid-column: auto; min-height: auto; }
+  .repair-visuals { grid-template-columns: 1fr; gap: 12px; margin-top: 48px; padding: 0 18px; }
+  .repair-visual { border-radius: 18px; }
+  .city-grid-expanded { grid-template-columns: repeat(2, 1fr); }
+  .area-map { height: 275px; }
+  .area-card-copy { padding: 20px; }
+  .area-card-copy .area-actions { display: grid; grid-template-columns: 1fr 1fr; }
+  .area-card-copy .area-actions a:last-child { grid-column: 1 / -1; }
+  .repair-gallery-grid, .faq-grid { grid-template-columns: 1fr; }
+  .before-after-placeholder { min-height: 245px; }
+  .repair-gallery-card > div:last-child { padding: 18px; }
+  .reviews-button { width: 100%; text-align: center; }
+  .cta-actions { display: grid; grid-template-columns: 1fr 1fr; margin-top: 25px; }
+  .cta-actions .button { width: 100%; margin: 0; padding: 13px 10px; }
+  .cta-actions .booking-trigger { grid-column: 1 / -1; }
+}
