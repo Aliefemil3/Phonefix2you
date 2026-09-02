@@ -235,7 +235,7 @@ Phone: ${booking.phone}
 Email: ${booking.email}
 Address: ${booking.address}
 Preferred: ${booking.preferredDate} at ${booking.preferredTime}`);
-  content.innerHTML = `<div class="booking-success"><div>✓</div><h3>Your booking request is ready</h3><p>Send the prepared SMS to PhoneFix2You. We will call or text you to confirm the appointment.</p><div class="success-actions"><a href="sms:+15092557969?body=${request}">Send booking SMS</a><a href="tel:+15092557969">Call Now</a></div></div>`;
+  content.innerHTML = `<div class="booking-success"><div>✓</div><h3>Your booking request is ready</h3><p>Send the prepared SMS to PhoneFix2You. We will call or text you to confirm the appointment.</p><div class="success-actions"><a href="sms:+15098169898?body=${request}">Send booking SMS</a><a href="tel:+15098169898">Call Now</a></div></div>`;
   document.querySelector(".booking-step-copy").style.display = "none";
   document.querySelector(".booking-controls").style.display = "none";
   document.querySelector(".booking-progress").style.display = "none";
