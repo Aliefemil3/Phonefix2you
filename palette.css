@@ -142,6 +142,36 @@ html { scroll-behavior: smooth; }
   font-size: 9px;
   font-weight: 800;
 }
+.hero-hours-status {
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 12px;
+  padding: 10px 14px 10px 11px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ded8f5;
+  border-radius: 14px;
+  background: rgba(247,245,255,.9);
+  box-shadow: 0 8px 24px rgba(69,41,153,.07);
+}
+.hero-hours-status svg {
+  width: 25px;
+  height: 25px;
+  flex: none;
+  padding: 4px;
+  border-radius: 8px;
+  background: #eee9ff;
+  color: #5a32d3;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.hero-hours-status > span { display: grid; gap: 2px; }
+.hero-hours-status strong { color: #211847; font: 800 11px/1.35 "Manrope"; letter-spacing: .06em; text-transform: uppercase; }
+.hero-hours-status small { color: #6b6680; font-size: 10px; line-height: 1.45; }
 
 .conversion-trust {
   max-width: 1192px;
@@ -385,6 +415,10 @@ html { scroll-behavior: smooth; }
 .instagram-cta strong { margin-top: 4px; font: 700 17px/1.2 "Manrope"; }
 .footer-instagram { display: inline-flex; align-items: center; gap: 5px; color: #4920cf; font-weight: 800; }
 .footer-instagram svg { width: 14px; height: 14px; }
+.footer-contact { display: grid; gap: 6px; line-height: 1.45; }
+.footer-contact > span { display: block; }
+.footer-hours { color: #6b6c80; font-size: 10px; font-weight: 600; }
+.footer-hours strong { margin-right: 5px; color: #242238; font-weight: 800; }
 
 @media (max-width: 980px) {
   .hero { margin-bottom: 0; padding-bottom: 50px; }
@@ -413,6 +447,10 @@ html { scroll-behavior: smooth; }
   .hero-location { justify-content: flex-start; font-size: 9px; letter-spacing: .08em; }
   .hero-proof-pills { margin-top: 15px; }
   .hero-proof-pills span { font-size: 8px; }
+  .hero-hours-status { width: 100%; padding: 11px 12px; align-items: flex-start; }
+  .hero-hours-status svg { width: 27px; height: 27px; }
+  .hero-hours-status strong { font-size: 11px; }
+  .hero-hours-status small { font-size: 10px; }
   .booking-bar {
     left: auto;
     right: auto;
@@ -441,4 +479,5 @@ html { scroll-behavior: smooth; }
   .cta-actions { display: grid; grid-template-columns: 1fr 1fr; margin-top: 25px; }
   .cta-actions .button { width: 100%; margin: 0; padding: 13px 10px; }
   .cta-actions .booking-trigger { grid-column: 1 / -1; }
+  .footer-contact { justify-items: center; }
 }
