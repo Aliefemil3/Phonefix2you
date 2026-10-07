@@ -240,3 +240,44 @@ Preferred: ${booking.preferredDate} at ${booking.preferredTime}`);
   document.querySelector(".booking-controls").style.display = "none";
   document.querySelector(".booking-progress").style.display = "none";
 });
+
+// GA4 click tracking. First matching selector wins, so nested areas come first.
+const trackingLocations = [
+  [".booking-success", "booking_modal"],
+  [".mobile-book", "sticky_bar"],
+  [".announcement", "announcement"],
+  [".site-header", "header"],
+  [".hero", "hero"],
+  [".process", "how_it_works"],
+  [".service-area", "service_area"],
+  [".faq-section", "faq"],
+  [".cta-section", "cta_banner"],
+  ["footer", "footer"]
+];
+
+function buttonLocation(element) {
+  const match = trackingLocations.find(([selector]) => element.closest(selector));
+  return match ? match[1] : element.closest("section[id]")?.id || "other";
+}
+
+function trackEvent(name, element, extraParams = {}) {
+  try {
+    if (typeof gtag !== "function") return;
+    gtag("event", name, { page_path: location.pathname, button_location: buttonLocation(element), ...extraParams });
+  } catch (error) {
+    // Tracking must never stop the link from opening.
+  }
+}
+
+// Capture phase, no preventDefault: the event is queued and the link opens immediately.
+document.addEventListener("click", event => {
+  const link = event.target.closest?.("a[href^='tel:'], a[href^='sms:']");
+  if (!link) return;
+  const isSms = link.getAttribute("href").startsWith("sms:");
+  // Links on the booking success screen finish the booking: count them once, as booking_submit only.
+  if (link.closest(".booking-success")) {
+    trackEvent("booking_submit", link, { contact_method: isSms ? "sms" : "call" });
+    return;
+  }
+  trackEvent(isSms ? "sms_click" : "phone_call_click", link);
+}, true);
