@@ -1,4 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "/iphone-repair/we-come-to-you",
+      "destination": "/iphone-repair",
+      "statusCode": 301
+    },
+    {
+      "source": "/iphone-repair/we-come-to-you/",
+      "destination": "/iphone-repair",
+      "statusCode": 301
+    }
+  ],
   "headers": [
     {
       "source": "/sitemap.xml",

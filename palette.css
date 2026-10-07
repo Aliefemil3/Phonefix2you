@@ -346,6 +346,7 @@ html { scroll-behavior: smooth; }
   letter-spacing: .08em;
 }
 .reviews-button { display: table; margin: 36px auto 0; }
+.services-more { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 36px; }
 
 .faq-section { max-width: 1192px; }
 .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
@@ -475,9 +476,50 @@ html { scroll-behavior: smooth; }
   .instagram-icon-link { width: 38px; height: 38px; }
   .instagram-cta { margin: 0 18px 35px; padding: 18px; grid-template-columns: auto 1fr; }
   .instagram-cta .button { grid-column: 1 / -1; width: 100%; text-align: center; }
-  .reviews-button { width: 100%; text-align: center; }
+  .reviews-button, .services-more .button { width: 100%; text-align: center; }
   .cta-actions { display: grid; grid-template-columns: 1fr 1fr; margin-top: 25px; }
   .cta-actions .button { width: 100%; margin: 0; padding: 13px 10px; }
   .cta-actions .booking-trigger { grid-column: 1 / -1; }
   .footer-contact { justify-items: center; }
+}
+
+/* Service landing pages (/iphone-repair, /samsung-repair) */
+.lp-hero { min-height: 600px; }
+.lp-hero .hero-lead { font-size: 18px; color: #3f3d52; }
+.lp-hero .hero-actions { gap: 12px; margin: 28px 0 18px; }
+.lp-breadcrumb { display: flex; gap: 8px; margin: 0; color: #6b6c80; font-size: 12px; font-weight: 700; }
+.lp-breadcrumb a { color: #4920cf; }
+.lp-call { padding: 20px 30px; font-size: 18px; gap: 12px; }
+.lp-text { padding: 20px 26px; font-size: 15px; }
+.lp-call svg, .lp-text svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.lp-service-grid { grid-template-columns: repeat(3, 1fr); }
+.lp-service-grid .service-card { min-height: 300px; }
+.camera-icon span { width: 42px; height: 32px; border: 4px solid #6c3cff; border-radius: 9px; position: relative; }
+.camera-icon span::after { content: ""; position: absolute; width: 10px; height: 10px; border: 3px solid #24d4e7; border-radius: 50%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.lp-warranty { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; align-items: center; }
+.lp-warranty-badge { padding: 46px 40px; border-radius: 30px; color: #fff; background: linear-gradient(145deg, #17132d, #2b1a5d); box-shadow: var(--shadow); }
+.lp-warranty-badge strong { display: block; font: 800 72px/1 "Manrope"; letter-spacing: -.06em; color: #b7a3ff; }
+.lp-warranty-badge span { display: block; margin-top: 10px; font: 700 20px/1.3 "Manrope"; }
+.lp-warranty-badge p { margin: 14px 0 0; color: #bcb5d4; font-size: 13px; line-height: 1.7; }
+.lp-warranty h2 { margin: 14px 0 0; }
+.lp-warranty .benefit-grid h3 { font-size: 14px; }
+.lp-warranty .benefit-grid p { font-size: 12px; }
+@media (max-width: 980px) {
+  .lp-service-grid { grid-template-columns: 1fr 1fr; }
+  .lp-warranty { grid-template-columns: 1fr; gap: 35px; }
+  .lp-breadcrumb { justify-content: center; }
+}
+@media (max-width: 640px) {
+  .lp-hero { padding-top: 22px; }
+  .lp-hero h1 { font-size: 42px; margin: 4px 0 16px; }
+  .lp-hero .hero-lead { font-size: 15px; margin: 0; }
+  .lp-hero .hero-actions { display: grid; grid-template-columns: 1fr; gap: 9px; margin: 20px 0 14px; }
+  .lp-hero .button-contact { width: 100%; }
+  .lp-breadcrumb { justify-content: flex-start; font-size: 11px; }
+  .lp-call { padding: 19px 20px; font-size: 18px; }
+  .lp-text { padding: 16px 20px; font-size: 15px; }
+  .lp-service-grid { grid-template-columns: 1fr; }
+  .lp-service-grid .service-card { min-height: auto; }
+  .lp-warranty-badge { padding: 34px 26px; }
+  .lp-warranty-badge strong { font-size: 58px; }
 }
