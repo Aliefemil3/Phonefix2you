@@ -9,6 +9,16 @@
       "source": "/iphone-repair/we-come-to-you/",
       "destination": "/iphone-repair",
       "statusCode": 301
+    },
+    {
+      "source": "/tablet-repair",
+      "destination": "/ipad-repair",
+      "statusCode": 301
+    },
+    {
+      "source": "/tablet-repair/",
+      "destination": "/ipad-repair",
+      "statusCode": 301
     }
   ],
   "headers": [
