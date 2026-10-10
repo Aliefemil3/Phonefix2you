@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="palette.css">
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"LocalBusiness","name":"PhoneFix2You","telephone":"+1-509-706-9013","description":"Mobile phone repair service that comes to customers for on-site repairs.","areaServed":["Kennewick, WA","Pasco, WA","Richland, WA"],"priceRange":"$$","slogan":"We Come To You","sameAs":["https://maps.app.goo.gl/CNRpfNAqgQyWRgQ29?g_st=ic","https://www.instagram.com/phone_fix2you"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Monday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Tuesday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Wednesday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Thursday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Friday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Saturday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Sunday","opens":"08:00","closes":"23:00"}]}
+    {"@context":"https://schema.org","@type":"LocalBusiness","name":"PhoneFix2You","url":"https://www.phonefix2you.com/","image":"https://www.phonefix2you.com/assets/phonefix2you-hero.png?v=11","telephone":"+1-509-706-9013","description":"Mobile phone repair service that comes to customers for on-site repairs.","areaServed":["Kennewick, WA","Pasco, WA","Richland, WA"],"priceRange":"$$","slogan":"We Come To You","sameAs":["https://maps.app.goo.gl/CNRpfNAqgQyWRgQ29?g_st=ic","https://www.instagram.com/phone_fix2you"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Monday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Tuesday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Wednesday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Thursday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Friday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Saturday","opens":"08:00","closes":"23:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Sunday","opens":"08:00","closes":"23:00"}]}
   </script>
 </head>
 <body>
@@ -49,6 +49,7 @@
       <a href="#services">Services</a>
       <a href="#process">How it works</a>
       <a href="#about">Why us</a>
+      
       <a href="#service-area">Service area</a>
       <a href="#reviews">Reviews</a>
       <a href="#faq">FAQ</a>
@@ -83,23 +84,11 @@
           <a class="button button-contact" href="tel:+15097069013">Call Now</a>
           <a class="button button-contact" href="sms:+15097069013">Text Us</a>
         </div>
-        <div class="hero-trust">
-          <span class="trust-check">✓</span>
-          <p><strong>Local mobile repair service</strong><br>5.0 Google rating · 30-day warranty</p>
-        </div>
       </div>
 
       <div class="hero-visual">
         <div class="visual-glow"></div>
-        <img src="./assets/phonefix2you-hero.png?v=11" alt="PhoneFix2You mobile phone repair technician next to a branded service van">
-        <div class="floating-card card-time">
-          <span class="card-icon">⏱</span>
-          <span><strong>30–60 min</strong><small>Average repair time</small></span>
-        </div>
-        <div class="floating-card card-warranty">
-          <span class="card-icon">✓</span>
-          <span><strong>30-day warranty</strong><small>Every repair covered</small></span>
-        </div>
+        <img class="hero-photo" src="./assets/phonefix2you-hero-van-soft.webp" alt="PhoneFix2You mobile phone repair technician next to a branded service van, with 30-60 minute average repair time and 30-day warranty">
       </div>
 
       <div class="booking-bar" id="booking">
@@ -135,11 +124,6 @@
       </div>
     </section>
 
-    <section class="logo-strip">
-      <p>We repair the devices you love</p>
-      <div><span>Apple</span><span>SAMSUNG</span><span>Google</span><span>Motorola</span><span>OnePlus</span></div>
-    </section>
-
     <section class="conversion-trust" aria-label="Why customers choose PhoneFix2You">
       <article><span class="conversion-trust-icon">⌖</span><div><strong>We Come To You</strong><small>Home, office, or workplace</small></div></article>
       <article><span class="conversion-trust-icon">◷</span><div><strong>Same Day &amp; Evening</strong><small>Open daily until 11 PM</small></div></article>
@@ -150,7 +134,7 @@
 
     <section class="repair-visuals" aria-label="Professional phone repair">
       <div class="repair-visual"><img src="./assets/repair-workbench-hd.png" alt="Smartphone repair tools and internal components" loading="lazy"></div>
-      <div class="repair-visual"><img src="./assets/repair-technician-hd.png" alt="Male technician repairing a smartphone" loading="lazy"></div>
+      <div class="repair-visual"><img src="./assets/repair-technician-new.webp" alt="PhoneFix2You technician repairing a smartphone at a workbench" loading="lazy"></div>
     </section>
 
     <section class="section services" id="services">
@@ -167,32 +151,33 @@
           <span class="popular-tag">Most popular</span>
           <h3>Screen replacement</h3>
           <p>Cracks, dead pixels, or a screen that won't respond. We'll make it feel brand new.</p>
-          <div class="service-meta"><span>From <strong>$69</strong></span><span>15–20 min</span></div>
-          <a href="#booking">Book screen repair <span>→</span></a>
+          <div class="service-meta"><span>Estimated <strong data-price-range="screen">call or text</strong></span><span>15–20 min</span></div>
+          <a href="#booking" data-repair="Screen Repair">Book screen repair <span>→</span></a>
         </article>
         <article class="service-card">
           <div class="service-icon battery-icon"><span></span></div>
           <h3>Battery replacement</h3>
           <p>Bring back all-day battery life without replacing the phone you already love.</p>
-          <div class="service-meta"><span>From <strong>$69</strong></span><span>30–45 min</span></div>
-          <a href="#booking">Book battery repair <span>→</span></a>
+          <div class="service-meta"><span>Estimated <strong data-price-range="battery">call or text</strong></span><span>30–45 min</span></div>
+          <a href="#booking" data-repair="Battery Replacement">Book battery repair <span>→</span></a>
         </article>
         <article class="service-card">
           <div class="service-icon back-icon"><span></span></div>
           <h3>Back glass repair</h3>
           <p>Restore the smooth, clean finish of your phone with precision laser repair.</p>
-          <div class="service-meta"><span>From <strong>$79</strong></span><span>60–90 min</span></div>
-          <a href="#booking">Book back glass repair <span>→</span></a>
+          <div class="service-meta"><span>Estimated <strong data-price-range="backglass">call or text</strong></span><span>60–90 min</span></div>
+          <a href="#booking" data-repair="Back Glass Repair">Book back glass repair <span>→</span></a>
         </article>
         <article class="service-card">
           <div class="service-icon port-icon"><span></span></div>
           <h3>Charging & diagnostics</h3>
           <p>Charging issues, water damage, or something unusual? We'll find and fix it.</p>
           <div class="service-meta"><span><strong>Custom quote</strong></span><span>30–60 min</span></div>
-          <a href="#booking">Book diagnostics <span>→</span></a>
+          <a href="#booking" data-repair="Diagnostics">Book diagnostics <span>→</span></a>
         </article>
       </div>
-      <div class="services-more"><a class="button button-dark" href="/iphone-repair">iPhone repair <span>→</span></a><a class="button button-dark" href="/samsung-repair">Samsung repair <span>→</span></a><a class="button button-dark" href="/google-pixel-repair">Google Pixel repair <span>→</span></a><a class="button button-dark" href="/ipad-repair">iPad repair <span>→</span></a><a class="button button-dark" href="/battery-replacement">Battery replacement <span>→</span></a><a class="button button-dark" href="/charging-port-repair">Charging port repair <span>→</span></a></div>
+      <p class="price-note center-note">All prices are <strong>estimates</strong> and depend on your model. Samsung Galaxy screens are <span data-price-range="samsung-screen">quoted by call or text</span> depending on model. The final price is confirmed by call or text when we confirm your appointment, before the repair starts. Pick your phone in the booking form to see your estimate.</p>
+      <p class="device-links">Looking for a specific phone? <a href="/iphone-repair">iPhone repair</a><span aria-hidden="true">·</span><a href="/samsung-repair">Samsung repair</a><span aria-hidden="true">·</span><a href="/google-pixel-repair">Google Pixel repair</a><span aria-hidden="true">·</span><a href="/ipad-repair">iPad repair</a><span aria-hidden="true">·</span><a href="/phone-repair-kennewick">Kennewick</a></p>
     </section>
 
     <section class="section process" id="process">
@@ -203,19 +188,15 @@
         <a class="button button-light" href="#booking">Get started <span>→</span></a>
       </div>
       <div class="steps">
-        <article><span class="step-number">01</span><div class="step-icon">⌁</div><div><h3>Tell us about your phone</h3><p>Choose your device and the repair it needs for an upfront estimate.</p></div></article>
-        <article><span class="step-number">02</span><div class="step-icon">◷</div><div><h3>Pick your place & time</h3><p>Home, office, or somewhere nearby. You choose where we meet.</p></div></article>
+        <article><span class="step-number">01</span><div class="step-icon">⌁</div><div><h3>Tell us about your phone</h3><p>Choose your phone and the repair to see a price estimate, then tell us where and when.</p></div></article>
+        <article><span class="step-number">02</span><div class="step-icon">◷</div><div><h3>Pick your place & time</h3><p>Home, office, or somewhere nearby. We confirm your time and the final price by call or text.</p></div></article>
         <article><span class="step-number">03</span><div class="step-icon">✓</div><div><h3>Relax while we repair</h3><p>Our expert arrives fully equipped and fixes your phone on-site.</p></div></article>
       </div>
     </section>
 
     <section class="section why-us" id="about">
       <div class="why-visual">
-        <img class="about-photo" src="./assets/phonefix2you-about.png?v=11" alt="PhoneFix2You mobile repair specialist in his workshop" loading="lazy">
-        <div class="about-photo-caption">
-          <span>Meet your technician</span>
-          <strong>Local expertise. Personal service.</strong>
-        </div>
+        <img class="about-photo" src="./assets/phonefix2you-about-ali.webp" alt="PhoneFix2You mobile repair specialist standing in his workshop" loading="lazy">
         <div class="experience-badge"><strong>5+</strong><span>Years of<br>expert care</span></div>
       </div>
       <div class="why-copy">
@@ -225,7 +206,7 @@
         <div class="benefit-grid">
           <article><span>✓</span><div><h3>We come to you</h3><p>No driving, parking, or waiting in line.</p></div></article>
           <article><span>✓</span><div><h3>Quality parts</h3><p>Carefully sourced and performance tested.</p></div></article>
-          <article><span>✓</span><div><h3>Upfront pricing</h3><p>No hidden fees or surprise add-ons.</p></div></article>
+          <article><span>✓</span><div><h3>Estimate first</h3><p>See an estimate online. The final price is confirmed before we start.</p></div></article>
           <article><span>✓</span><div><h3>30-day warranty</h3><p>Every repair is covered for peace of mind.</p></div></article>
         </div>
         <div class="stats">
@@ -242,6 +223,7 @@
         <h2>Mobile phone repair across the <em>Tri-Cities.</em></h2>
         <p><strong>We come to your home, office, or workplace.</strong> No storefront, driving, or waiting room. Choose your location and a PhoneFix2You technician arrives ready to complete your repair on-site.</p>
         <div class="city-grid city-grid-expanded"><article><span>01</span><strong>Kennewick</strong></article><article><span>02</span><strong>Pasco</strong></article><article><span>03</span><strong>Richland</strong></article></div>
+        <p class="price-note">Based in the Tri-Cities? See our page for <a href="/phone-repair-kennewick"><strong>phone repair in Kennewick, WA</strong></a>.</p>
         <button class="button button-primary booking-trigger" type="button">Check availability <span>→</span></button>
       </div>
       <div class="area-card">
@@ -259,16 +241,16 @@
       <div class="section-heading center-heading">
         <span class="kicker">Real repair results</span>
         <h2>Before &amp; After <em>Repairs.</em></h2>
-        <p>See the difference careful workmanship and quality parts can make.</p>
+        <p>Real repairs by PhoneFix2You, with the phone model and repair type shown for each one.</p>
       </div>
       <div class="repair-gallery-grid">
         <article class="repair-gallery-card">
-          <div class="before-after-photo"><img src="./assets/before-after-screen.jpg" alt="Before and after iPhone screen repair" loading="lazy"></div>
-          <div><h3>iPhone screen repair</h3><p>Cracked screen restored for a clean, responsive finish.</p></div>
+          <div class="before-after-photo"><img src="./assets/before-after-17-pro-max-screen.webp" alt="Before and after iPhone 17 Pro Max screen repair" loading="lazy"></div>
+          <div><h3>iPhone 17 Pro Max screen repair</h3><p>Cracked screen replaced.</p><span class="gallery-caption-meta">Repair time shown in photo: 9 minutes</span></div>
         </article>
         <article class="repair-gallery-card">
-          <div class="before-after-photo"><img src="./assets/before-after-back-glass.jpg" alt="Before and after iPhone back glass repair" loading="lazy"></div>
-          <div><h3>Back glass repair</h3><p>Damaged back glass replaced with precision and care.</p></div>
+          <div class="before-after-photo"><img src="./assets/before-after-15-pro-max-back-glass.webp" alt="Before and after iPhone 15 Pro Max back glass repair" loading="lazy"></div>
+          <div><h3>iPhone 15 Pro Max back glass repair</h3><p>Broken back glass replaced.</p><span class="gallery-caption-meta">Repair time shown in photo: 30 minutes</span></div>
         </article>
       </div>
     </section>
@@ -277,26 +259,31 @@
       <div class="section-heading center-heading">
         <span class="kicker">Google reviews</span>
         <h2>What customers <em>say</em></h2>
-        <a class="google-rating" href="https://maps.app.goo.gl/CNRpfNAqgQyWRgQ29?g_st=ic" target="_blank" rel="noopener"><strong>G</strong><span><b>5.0 on Google · 160+ reviews</b></span></a>
+        <a class="google-rating" href="https://maps.app.goo.gl/CNRpfNAqgQyWRgQ29?g_st=ic" target="_blank" rel="noopener"><strong>G</strong><span><b>5.0 on Google</b><i class="pill-stars" aria-hidden="true">★★★★★</i><b>160+ reviews</b></span></a>
       </div>
       <div class="customer-review-grid">
         <figure class="customer-review">
+          <div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
           <blockquote>&ldquo;Very professional service, quick and exactly what I asked for. Fixed my iPhone broken front glass in a timely manner.&rdquo;</blockquote>
           <figcaption><span aria-hidden="true">G</span><div><strong>Gabriel A.</strong><small>Google review</small></div></figcaption>
         </figure>
         <figure class="customer-review">
+          <div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
           <blockquote>&ldquo;I really liked it. He came to my location and fixed S25 ultra right here. The whole process was easy and the phone is working great&rdquo;</blockquote>
           <figcaption><span aria-hidden="true">G</span><div><strong>Dan S.</strong><small>Google review</small></div></figcaption>
         </figure>
         <figure class="customer-review">
+          <div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
           <blockquote>&ldquo;open long hours so easy to access when needed. Worked surprisingly quick. Also had great customer service. 10/10 recommend!&rdquo;</blockquote>
           <figcaption><span aria-hidden="true">G</span><div><strong>Diego A.</strong><small>Google review</small></div></figcaption>
         </figure>
         <figure class="customer-review">
+          <div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
           <blockquote>&ldquo;I found this service and he provide mobile repairs throughout the Tri-cites area. I came from Prosser, and he made my screen look like new again. Highly recommend&rdquo;</blockquote>
           <figcaption><span aria-hidden="true">G</span><div><strong>Jeannie F.</strong><small>Google review</small></div></figcaption>
         </figure>
         <figure class="customer-review">
+          <div class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
           <blockquote>&ldquo;This company provides mobile repair service and they were very fast and professional. he fixed my screen quickly and did a great job&rdquo;</blockquote>
           <figcaption><span aria-hidden="true">G</span><div><strong>Brenda C.</strong><small>Google review</small></div></figcaption>
         </figure>
@@ -307,14 +294,16 @@
     <section class="section faq-section" id="faq">
       <div class="section-heading split-heading">
         <div><span class="kicker">Frequently asked questions</span><h2>Everything you need to <em>book confidently.</em></h2></div>
-        <p>Still have a question? Call or text 509-706-9013 and we will help you choose the right repair.</p>
+        <p>Still have a question? Call or text +1 509-706-9013 and we will help you choose the right repair.</p>
       </div>
       <div class="faq-grid">
         <details><summary>How long does a repair take?</summary><p>Most repairs are completed in 30–60 minutes. Many iPhone screen repairs take approximately 15–20 minutes.</p></details>
         <details><summary>Do you come to my location?</summary><p>Yes. We come to your home, office, workplace, or another convenient location in our service area.</p></details>
         <details><summary>Do you offer warranty?</summary><p>Yes. PhoneFix2You repairs include a 30-day warranty for added peace of mind.</p></details>
         <details><summary>What devices do you repair?</summary><p>We repair Apple iPhone, Samsung Galaxy, Google Pixel, Motorola, and many other smartphones.</p></details>
-        <details><summary>How do I book a repair?</summary><p>Use the Book Repair button, call us, or send a text. Choose your device, repair, preferred time, and service address.</p></details>
+        <details><summary>How do I book a repair?</summary><p>Use the Book Repair button, call us, or send a text. Choose your phone and repair to see an estimate, then enter your details and a preferred time. The form prepares a text message to us; nothing is booked until we confirm by call or text.</p></details>
+        <details><summary>How much will my repair cost?</summary><p>Prices on this site are estimates and depend on your model. Choose your phone and repair in the booking form to see your estimate. The final price is confirmed by call or text when we confirm your appointment, before the repair starts.</p></details>
+        <details><summary>What are your hours, and can I book in the evening?</summary><p>We are open daily 8 AM–11 PM, Tri-Cities time. In the booking form you can request an appointment time from 8 AM to 10 PM. Every request is confirmed by call or text, so it is not a booked appointment until we reply. For anything urgent or later, call or text +1 509-706-9013.</p></details>
         <details><summary>Do you accept same-day appointments?</summary><p>Yes, same-day appointments are available when scheduling allows. Contact us early for the best availability.</p></details>
       </div>
     </section>
@@ -323,7 +312,7 @@
       <div>
         <span class="kicker kicker-light">We Come To You</span>
         <h2>Need your phone fixed tonight?</h2>
-        <p>We're open until 11 PM. Book your mobile repair or call and text 509-706-9013.</p>
+        <p>We're open until 11 PM. Book your mobile repair or call and text +1 509-706-9013.</p>
       </div>
       <div class="cta-actions"><a class="button button-light" href="tel:+15097069013">Call Now</a><a class="button button-light" href="sms:+15097069013">Text Us</a><button class="button button-light booking-trigger" type="button">Book Repair <span>→</span></button></div>
     </section>
@@ -337,8 +326,8 @@
 
   <footer>
     <a class="brand brand-footer" href="#"><img class="brand-logo" src="./assets/phonefix2you-logo.png?v=11" alt="PhoneFix2You logo" loading="lazy"><span>PhoneFix<span class="brand-dot">2</span>You</span></a>
-    <p class="footer-contact"><span>We Come To You · <a href="tel:+15097069013">509-706-9013</a></span><span class="footer-hours"><strong>Hours</strong> Mon–Sun · 8:00 AM–11:00 PM</span></p>
-    <div><a href="#services">Services</a><a href="#process">How it works</a><a href="#about">Why us</a><a href="#service-area">Service area</a><a href="#faq">FAQ</a></div>
+    <p class="footer-contact"><span>We Come To You · <a href="tel:+15097069013">+1 509-706-9013</a></span><span class="footer-hours"><strong>Hours</strong> Mon–Sun · 8:00 AM–11:00 PM</span></p>
+    <div><a href="#services">Services</a><a href="#process">How it works</a><a href="#about">Why us</a><a href="#service-area">Service area</a><a href="#faq">FAQ</a><a href="/phone-repair-kennewick">Kennewick</a><a href="/privacy">Privacy</a></div>
     <small><a class="footer-instagram" href="https://www.instagram.com/phone_fix2you" target="_blank" rel="noopener" aria-label="Follow PhoneFix2You on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg> Instagram</a> · © 2026 PhoneFix2You.</small>
   </footer>
 
@@ -350,12 +339,12 @@
   <div class="modal" id="booking-modal" aria-hidden="true">
     <div class="modal-card booking-modal-card">
       <button class="modal-close" aria-label="Close">×</button>
-      <div class="booking-progress"><span class="active"></span><span></span><span></span><span></span><span></span><span></span></div>
-      <div class="booking-step-copy"><span class="kicker" id="step-kicker">Step 1 of 6</span><h2 id="step-title">Choose your device brand</h2><p id="step-description">Select the phone you need repaired.</p></div>
+      <div class="booking-progress"><span class="active"></span><span></span><span></span></div>
+      <div class="booking-step-copy"><span class="kicker" id="step-kicker">Step 1 of 3</span><h2 id="step-title">Choose your phone</h2><p id="step-description">Pick the brand, then your model.</p></div>
       <div class="booking-step-content" id="booking-step-content"></div>
       <p class="booking-alert" id="booking-alert" role="alert" aria-live="polite"></p>
       <div class="booking-controls"><button class="button booking-back" type="button">Back</button><button class="button button-primary booking-next" type="button">Continue <span>→</span></button></div>
-      <small class="booking-note">No payment collected online. We confirm every appointment by call or text.</small>
+      <small class="booking-note">No payment collected online. Times are requests: we confirm every appointment and the final price by call or text. <a href="/privacy">Privacy Policy</a></small>
     </div>
   </div>
   <script src="script.js"></script>
